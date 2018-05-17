@@ -1,0 +1,11 @@
+<h2><%= @contact["title"] %></h2>
+<h3>First Name: <%= @contact["first_name"] %></h3>
+<h4>Middle Name: <%= @contact["middle_name"] %></h4>
+<h4>Last Name: <%= @contact["last_name"] %></h4>
+<h4>Phone Number: <%= @contact["phone_number"] %></h4>
+<h4>Bio: <%= @contact["bio"] %></h4>
+<h6>Last updated on <%= @contact["formatted"]["updated_at"]</h6>
+
+<br>
+<a href="/client/contacts/<%= @contact['id'] %>/edit">Edit</a>
+<a href="/client/contacts/<%= @contact['id'] %>" data-method="delete">Delete</a>
